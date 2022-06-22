@@ -1,0 +1,21 @@
+p{
+    color: $very-dark-blue-50;
+    font-size: 14px;
+}
+p:hover{
+    color: $very-dark-blue;
+    cursor: pointer;
+}
+.form-check-input{
+    width: 14px;
+    height: 14px;
+    border: none;
+    background-color: $light-grayish-pink;
+}
+.form-check-input:checked{
+    background: $very-dark-blue;
+    box-shadow: none;
+}
+.form-check-input:focus{
+    box-shadow: none;
+}

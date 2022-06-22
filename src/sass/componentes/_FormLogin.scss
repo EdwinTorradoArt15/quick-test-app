@@ -1,0 +1,29 @@
+form {
+  .form-control {
+    background-color: $light-grayish-pink;
+    padding: 20px;
+    border: none;
+    border-radius: 40px;
+    width: 270px;
+    height: 45px;
+    font-weight: bold;
+    color: $black-50;
+  }
+  .form-control:focus{
+    border: 2px solid $black;
+    box-shadow: none;
+    font-weight: normal;
+  }
+  .btn {
+    width: 270px;
+    height: 45px;
+    background: $very-dark-blue-50;
+    color: $white;
+    border: none;
+    border-radius: 40px;
+  }
+  .btn:hover {
+    background-color: $very-dark-blue;
+    color: $white;
+  }
+}
