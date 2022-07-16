@@ -1,10 +1,13 @@
-import {Login} from './components/Login'
+// import { Login } from "./components/Login";
+import { FormRegister } from "./components/FormRegister";
+import { Fragment } from "react";
 
 function App() {
   return (
-
-    <Login/>
-
+    <Fragment>
+      {/* <Login /> */}
+      <FormRegister />
+    </Fragment>
   );
 }
 
