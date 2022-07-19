@@ -1,7 +1,5 @@
 export const FormLogin = () => {
 
-  let 
-
   return (
     <form className="d-flex flex-column">
       <div className="mx-auto">
@@ -27,7 +25,6 @@ export const FormLogin = () => {
       </div>
 
       <button type="submit" className="btn">Inicia sesion</button>
-
       </div>
 
     </form>

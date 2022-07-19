@@ -6,12 +6,12 @@ export const Remember = () => {
           <div className="col-auto">
             <input
               type="checkbox"
-              class="form-check-input"
+              className="form-check-input"
               id="exampleCheck"
             />
           </div>
           <div className="col-auto">
-            <p class="form-check-label">Recuérdame</p>
+            <p className="form-check-label">Recuérdame</p>
           </div>
         </div>
       </div>

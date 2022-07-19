@@ -1,9 +1,14 @@
 @import '/node_modules/bootstrap/scss/bootstrap';
 @import './colors/colores';
-@import './componentes/Login';
-@import './componentes/FormLogin';
-@import './componentes/Remember';
-@import './componentes/Separator';
-@import './componentes/SocialMedias';
-@import './componentes/FooterLogin';
+
+// Login
+@import './componentes/Login/Login';
+@import './componentes/Login/FormLogin';
+@import './componentes/Login/Remember';
+@import './componentes/Login/Separator';
+@import './componentes/Login/SocialMedias';
+@import './componentes/Login/FooterLogin';
+
+// Registro
+@import './componentes/Register/Registro';
 
