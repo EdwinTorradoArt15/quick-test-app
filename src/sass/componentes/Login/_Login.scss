@@ -2,7 +2,7 @@ body{
     background-color: $very-dark-blue;
 }
 
-.registro-contenedor{
+.login-contenedor{
     width: 360px;
     height: 550px;
     background-color: $white;
@@ -11,10 +11,4 @@ body{
     h1{
         font-size: 30px;
     }
-}
-span{
-    color: $very-dark-blue-50
-}
-span:hover{
-    color: $very-dark-blue;
 }

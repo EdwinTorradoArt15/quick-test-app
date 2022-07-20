@@ -5,5 +5,10 @@
     }
     .link{
         cursor: pointer;
+        color: $very-dark-blue-50;
+        text-decoration: none;
+    }
+    .link:hover{
+        color: $very-dark-blue;
     }
 }

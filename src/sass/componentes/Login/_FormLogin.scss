@@ -3,10 +3,9 @@ form {
     background-color: $light-grayish-pink;
     padding: 20px;
     border: none;
-    border-radius: 40px;
+    border-radius: 10px;
     width: 270px;
     height: 45px;
-    font-weight: bold;
     color: $black-50;
   }
   .form-control:focus{
@@ -20,7 +19,7 @@ form {
     background: $very-dark-blue-50;
     color: $white;
     border: none;
-    border-radius: 40px;
+    border-radius: 10px;
   }
   .btn:hover {
     background-color: $very-dark-blue;

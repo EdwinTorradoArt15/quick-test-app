@@ -28,21 +28,21 @@ export const FormRegistro = () => {
         if(!valores.usuario){
           errores.usuario = 'Por favor ingresa un nombre de usuario'
         }else if(!/^[a-zA-ZÀ-ÿ\s]{6,10}$/.test(valores.usuario)){
-          errores.usuario = 'El usuario solo puede contener letras,numeros y espacios'
+          errores.usuario = 'El usuario no puede contener caracteres especiales'
         }
 
         // Validacion correo
         if(!valores.correo){
           errores.correo = 'Por favor ingresa un correo electronico'
         }else if(!/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/.test(valores.correo)){
-          errores.correo = 'El correo solo puede contener letras, numeros, puntos, guiones y guion bajo'
+          errores.correo = 'El correo no puede contener caracteres especiales'
         }
 
         // Validacion contrasenia
         if(!valores.contrasenia){
           errores.contrasenia = 'Por favor ingresa una contrasenia'
         }else if(!/^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$/.test(valores.contrasenia)){
-          errores.contrasenia = 'La contrasenia debe contener entre 8-16 digitos y contener almenos una mayuscula'
+          errores.contrasenia = 'La Contrasenia muy corta'
         }
 
         //Validar repetir contrasenia
@@ -63,11 +63,12 @@ export const FormRegistro = () => {
     >
       {({errors}) => (
 
-        <Form className="d-flex flex-column">
+        <Form className="d-flex flex-column form-registro ">
 
-        <div className="mx-auto">
+          <div className="mx-auto">
+
           <div className="py-3">
-            <label htmlFor="nombre">Nombre</label>
+            <label className="d-none" htmlFor="nombre">Nombre</label>
             <Field
               type="text"
               name="nombre"
@@ -76,12 +77,12 @@ export const FormRegistro = () => {
               id="nombre"
             />
             <ErrorMessage name="nombre" component={() => (
-               <div>{errors.nombre}</div>
+               <p className="error-message">{errors.nombre}</p>
             )}/>
           </div>
 
-          <div className="pb-3">
-            <label htmlFor="usuario">Usuario</label>
+          <div>
+            <label className="d-none" htmlFor="usuario">Usuario</label>
             <Field
               type="text"
               name="usuario"
@@ -90,12 +91,12 @@ export const FormRegistro = () => {
               id="usuario"
             />
             <ErrorMessage name="usuario" component={() => (
-               <div>{errors.usuario}</div>
+               <p className="error-message">{errors.usuario}</p>
             )}/>
           </div>
 
-          <div className="pb-3">
-            <label htmlFor="correo">Email</label>
+          <div className="py-3">
+            <label className="d-none" htmlFor="correo">Email</label>
             <Field
               type="email"
               name="correo"
@@ -104,12 +105,12 @@ export const FormRegistro = () => {
               id="correo"
             />
             <ErrorMessage name="correo" component={() => (
-               <div>{errors.correo}</div>
+               <p className="error-message">{errors.correo}</p>
             )}/>
           </div>
 
-          <div className="pb-3">
-            <label htmlFor="contrasenia">Contrasenia</label>
+          <div>
+            <label className="d-none" htmlFor="contrasenia">Contrasenia</label>
             <Field
               type="password"
               name="contrasenia"
@@ -118,12 +119,12 @@ export const FormRegistro = () => {
               id="contrasenia"
             />
             <ErrorMessage name="contrasenia" component={() => (
-               <div>{errors.contrasenia}</div>
+               <p className="error-message">{errors.contrasenia}</p>
             )}/>
           </div>
 
-          <div className="pb-3">
-            <label htmlFor="contrasenia2">Confirmar contrasenia</label>
+          <div className="py-3">
+            <label className="d-none" htmlFor="contrasenia2">Confirmar contrasenia</label>
             <Field
               type="password"
               name='contrasenia2'
@@ -132,7 +133,7 @@ export const FormRegistro = () => {
               id="contrasenia2"
             />
             <ErrorMessage name="contrasenia2" component={() => (
-               <div>{errors.contrasenia2}</div>
+               <p className="error-message">{errors.contrasenia2}</p>
             )}/>
           </div>
 
@@ -140,7 +141,7 @@ export const FormRegistro = () => {
             Registrar
           </button>
           {formularioEnviado && <p>Su registro se completo exitosamente</p>}
-        </div>
+          </div>
       </Form>
       )}
     </Formik>
