@@ -1,0 +1,95 @@
+@import '../../sass/colors/colores';
+
+.sideBar{
+    flex: 1;
+    min-height: 100vh;
+    background-color: $very-dark-blue;
+    color: $white;
+    .top{
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .logo{
+            font-size: 20px;
+            font-weight: bold;
+            color: $white;
+        }
+    }
+
+    .center{
+        margin-top: 40px;
+        padding-left: 10px;
+        ul{
+            list-style: none;
+            margin: 0;
+            padding:0;
+        }
+
+
+        li{
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            cursor: pointer;
+
+            &:hover{
+                color: $black;
+                background-color: $white;
+                border-top-left-radius: 20px;
+                border-bottom-left-radius: 20px;
+            }
+
+            .icon{
+                font-size: 18px;
+            }
+            span{
+                font-size: 13px;
+                font-weight: 600;
+                margin-left: 10px;
+            }
+        }
+
+    }
+    .bottom{
+        padding-left: 10px;
+        padding-top: 520px;
+        ul{
+            list-style: none;
+            margin: 0;
+            padding:0;
+        }
+
+        li{
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            cursor: pointer;
+            
+            &:hover{
+                color: $black;
+                background-color: $white;
+                border-top-left-radius: 20px;
+                border-bottom-left-radius: 20px;
+            }
+
+            .icon{
+                font-size: 18px;
+            }
+            span{
+                font-size: 13px;
+                font-weight: 600;
+                margin-left: 10px;
+            }
+        }
+        .footer{
+            text-align: center;
+            color: $white;
+            margin-top: 30px;
+            p{
+                color: $white;
+            }
+        }
+    }
+}
